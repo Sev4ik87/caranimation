@@ -1,0 +1,189 @@
+html {
+  font-family: sans-serif;
+}
+.tablename:first-letter {
+  color: #f72121;
+}
+.tablename {
+  text-align: center;
+}
+
+table {
+  margin-left: 17%;
+  margin-bottom: 20%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 65%;
+  table-layout: fixed;
+  border: 5px solid hsl(11, 88%, 47%);
+}
+tr {
+  border: 2px solid rgb(46, 132, 237);
+}
+td {
+  border: 2px solid rgb(43, 32, 240);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+}
+
+.BMW1,
+.Ford1,
+.toyota1 {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-top: 95px;
+}
+
+.companyName {
+  width: 100%;
+  height: 50px;
+  background-color: #d1e1eb;
+  font-size: 22px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bolder;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.animation {
+animation-name: slide ;
+animation-duration: 2s;
+animation-iteration-count: 4;
+animation-timing-function: linear;
+}
+.Ford1, .BMW1, .toyota1 {
+  animation-delay: 0.5s;
+  animation-name: logo ;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+}
+@keyframes logo {
+  from {
+    margin-left: 0%; 
+  }
+  50% {
+    margin-left: 30%;
+    transform: rotate(270deg) scale(2, 0.5);
+    }
+    to {
+      margin-left: 80%;
+    }
+  }
+
+@keyframes slide {
+from {
+  margin-left: 0%;
+  color: black;
+  font-size:22px ;
+}
+50% {
+  margin-left: 30%;
+  color: #f72121;
+  transform: rotate(180deg) ;
+  font-size: 44px
+  }
+  to {
+    margin-left: 80%;
+    color: rgb(8, 12, 16);
+    font-size: 22px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 35px;
+  background-color: #1b4e70;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+}
+h2 {
+  text-align: center;
+}
+caption {
+  font-size: 15px;
+}
+
+nav {
+  text-decoration-style: solid;
+  position: absolute;
+  bottom: -32px;
+  height: 60px;
+  line-height: 0px;
+  width: 100%;
+}
+.button {
+  color: #f5f2f2;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 2px;
+  text-decoration: none;
+}
+.button:hover {
+  color: #d2d0d0;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 2px;
+  text-decoration: none;
+}
+
+.textcols4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.textcols4-item {
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: 30%;
+  background: #f5f6f7;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+.textcols4-item + .textcols4-item {
+  margin-left: 5%;
+}
+
+.textcols5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #053a6a;
+  height: 65px;
+}
+.textcols5-item {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: 35px;
+  background: #0e2f51;
+  color: #f5f2f2;
+  text-align: center;
+  font-style: oblique;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+}
+.textcols5-item + .textcols5-item {
+  margin-left: 15%;
+}
